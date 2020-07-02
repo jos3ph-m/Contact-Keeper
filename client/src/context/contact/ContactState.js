@@ -67,6 +67,7 @@ const ContactState = (props) => {
       value={{
         contacts: state.contacts,
         addContact,
+        deleteContact,
       }}
     >
       {props.children}
