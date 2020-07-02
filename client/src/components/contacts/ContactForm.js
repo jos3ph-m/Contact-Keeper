@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import ContactContext from "../../context/contacts/ContactContext";
+import ContactContext from "../../context/contact/contactContext";
 
 const ContactForm = () => {
   const contactContext = useContext(ContactContext);
@@ -61,6 +61,7 @@ const ContactForm = () => {
         name="type"
         value="personal"
         checked={type === "personal"}
+        onChange={onChange}
       />{" "}
       Personal{" "}
       <input
@@ -68,6 +69,7 @@ const ContactForm = () => {
         name="type"
         value="professional"
         checked={type === "professional"}
+        onChange={onChange}
       />{" "}
       Professional
       <div>
