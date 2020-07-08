@@ -2,7 +2,6 @@
 const express = require("express");
 const connectDB = require("./config/db");
 const path = require("path");
-require("dotenv").config();
 
 const app = express();
 
@@ -15,11 +14,6 @@ app.use(
     extended: false,
   })
 );
-
-// add route
-// app.get("/", (req, res) => {
-
-// });
 
 // Define Routes
 app.use("/api/auth", require("./routes/auth"));
